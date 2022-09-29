@@ -1,0 +1,783 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  letter-spacing: 0.2px;
+}
+
+html {
+  height: 100%;
+}
+
+
+
+.navFooter-body {
+  font-family: 'Noto Sans', sans-serif;
+  height: 100%;
+}
+
+/* NAVIGATION */
+.navFooter-header {
+  position: fixed;
+  z-index: 100;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
+  width: 100%;
+}
+
+.whs {
+  font-size: 36px;
+  font-weight: 600;
+  color: #4EA1A5;
+}
+
+.ptagWhs {
+  color: #888888;
+  font-size: 12px;
+
+}
+
+.logo {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.loginOnNav {
+  font-size: 20px;
+  width: 100px;
+  text-align: center;
+  font-weight: 600;
+  color: #4EA1A5;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.SignUpOnNav {
+  background-color: #4EA1A5;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.loginOnNav:hover {
+  color: #67b6ba;
+  transition: 0.3s;
+}
+
+/* blue button hover */
+.LoginFormBtn:hover,
+.commentBtnSend:hover,
+.SignUpOnNav:hover {
+  color: #fff;
+  transition: 0.3s;
+  background-color: #67b6ba;
+}
+
+
+.navFooter-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+}
+
+/* LOGEDIN NAVI */
+
+.yourPostOnNav,
+.findPostOnNav,
+.profileOnNav,
+.showpostOnNav {
+
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  padding: 0 20px;
+}
+
+#root {
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.LogoutOnNav {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+  background-color: #fff;
+  margin-left: 200px;
+}
+
+.LogoutOnNav:hover {
+  color: #888;
+  transition: 0.3s;
+}
+
+.yourPostOnNav:hover,
+.findPostOnNav:hover,
+.profileOnNav:hover,
+.showpostOnNav:hover {
+  color: #67b6ba;
+  transition: 0.3s;
+}
+
+
+.loggedInNav {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
+
+.loggedInNav>ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.NavBtn {
+  font-display: flex;
+  flex-direction: row;
+  margin-right: 130px;
+
+}
+
+
+/* FOOTER */
+footer {
+  font-size: 12px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888888;
+  position: sticky;
+  top: 100vh;
+  width: 100%;
+  background: #ffffff;
+  border-top: 1px solid #F4F4F4;
+  margin-top: 50px;
+}
+
+
+
+/* LOGIN PAGE */
+.loginMain {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginPage {
+  font-size: 40px;
+  color: #333;
+  font-weight: 600;
+}
+
+.loginForm {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  width: 300px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.LoginInputEmail {
+  height: 20px;
+}
+
+
+.loginBtnWrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.showPassBtn {
+  background-color: #fff;
+  border: none;
+  padding: 20px;
+  color: #555;
+  cursor: pointer;
+}
+
+.LoginFormBtn,
+.SingUpSubmit-btn {
+  font-size: 20px;
+  width: 100px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4EA1A5;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+}
+
+.loginFormPass {
+  height: 20px;
+  width: 300px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+/* TextArea */
+.CommentWrap {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  row-gap: 10px;
+  margin-top: 50px;
+}
+
+.CommentTitle {
+  font-size: 21px;
+  color: #333;
+}
+
+.CommentTextarea {
+  height: 100px;
+  width: 95%;
+  resize: none;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  color: #333;
+}
+
+.CommentBtnWrap {
+  display: flex;
+  column-gap: 10px;
+  width: 300px;
+  padding-bottom: 50px;
+  justify-content: space-between;
+}
+
+.commentBtnSend {
+  height: 30px;
+  width: 100px;
+  background-color: #4EA1A5;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.commentBtnDelete {
+  height: 30px;
+  width: auto;
+  background-color: #fff;
+  color: #e16e40;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  align-items: center;
+
+}
+
+.commentBtnDelete:hover {
+  color: #ef8f6a;
+  ;
+  transition: 0.3s;
+}
+
+.postedComment {
+  font-size: 21px;
+}
+
+.commentSection {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  width: 100%;
+  justify-content: left;
+  height: auto;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #FFFFFF;
+  border: 0.5px solid #D9D9D9;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+}
+
+.commentContentWrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+}
+
+.commentDate {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  color: #888;
+  font-size: 14px;
+align-items: center;
+
+}
+
+.commentDateWrap {
+  display: flex;
+  justify-content: end;
+}
+
+/* Profile Page */
+
+.profileWrap {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  align-items: center;
+}
+
+
+
+.aBadge {
+  background-color: #fff;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+  font-size: 18px;
+  color: #555;
+}
+
+.badgeW {
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #b7c3be;
+  border: 0px;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+
+.badgeV1 {
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #4EA1A5;
+  border: 0px;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+
+.badgeV2 {
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #FEB03A;
+  ;
+  border: 0px;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+
+.profile-page-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profileSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150px;
+  justify-content: space-evenly;
+}
+
+.fname {
+  color: #333;
+  font-size: 30px;
+}
+
+.badges {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3vh;
+}
+
+
+.paragraph {
+  width: 100%;
+  font-size: 21px;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Profile Page */
+
+/* PShow Post */
+
+.show-art {
+  margin-top: 150px;
+  margin-left: 25%;
+  margin-right: 25%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+
+}
+
+.show-aside {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  height: 150px;
+  width: auto;
+  padding: 20px;
+  background: #FFFFFF;
+  border: 0.5px solid #D9D9D9;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+}
+
+.showp {
+  font-size: 18px;
+  color: #555;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.show-h1 {
+  font-size: 21px;
+  color: #333;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.showtime {
+  color: #888;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: end;
+}
+
+.showimg {
+  height: 150px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.showcontent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 100%;
+}
+
+.showform {
+  display: flex;
+  justify-content: end;
+}
+
+.showbutton {
+  color: #555;
+  background-color: #fff;
+  border: none;
+  font-weight: 600;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.showbutton:hover {
+  color: #888;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+/* POST DETAIL
+. */
+.show-fig-detail {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.showimg-detail {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.show-h1-detail {
+  font-size: 32px;
+  color: #333;
+}
+
+.show-aside-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.showcontent-detail {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  color: #333;
+}
+
+.showtime-detail {
+  justify-content: end;
+  color: #888;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.showp-detail {
+  font-size: 21px;
+  line-height: 28px;
+  color: #333;
+}
+
+/* Author */
+.postedby {
+  font-size: 21px;
+  color: #333;
+}
+
+.show-aside-detail-profile {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  align-items: center;
+  width: 300px;
+}
+
+.showimg-detail-profile {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+
+}
+
+.showcontent-detail-profile-wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: 30px;
+}
+
+.showcontent-detail-profile-wrap2 {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+}
+
+.showcontent-detail-profile {
+  font-size: 18px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  justify-content: center;
+}
+
+.showcontent-detail-profile-name {
+  font-size: 24px;
+  color: #333;
+  font-weight: 500;
+}
+
+.showcontent-detail-profile-student {
+  font-size: 18px;
+  color: #555;
+  font-weight: 300;
+}
+
+.showcontent-detail-profile-landlord {
+  font-size: 18px;
+  color: #555;
+  font-weight: 300;
+}
+
+/* Sign Up */
+.SignUpTittle {
+  font-size: 40px;
+  color: #333;
+  font-weight: 600;
+}
+
+.regform {
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.SignUpForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #333;
+  row-gap: 30px;
+}
+
+
+.regform-wrap {
+  margin-top: 150px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.NameWrap {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.FirstName,
+.LastName,
+.Email,
+.Password {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+}
+
+.FirstName input,
+.LastName input,
+.Email input,
+.Password input {
+  padding: 10px;
+  color: #333;
+  font-size: 18px;
+  border: 1px solid #888;
+  border-radius: 5px;
+}
+
+.SingUpSubmit {
+  display: flex;
+  justify-content: center;
+}
+
+/* Vote */
+.vote-wrap {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  justify-content: center;
+
+}
+.vote-wrap2 {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  justify-content: space-evenly;
+}
+
+.vote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 15px;
+}
+
+.vote-icon {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #555;
+
+}
+
+.vote-num {
+  font-size: 28px;
+  font-weight: 500;
+  color: #555;
+}
+
+.Vh3 {
+  font-size: 16px;
+  color: #555;
+  width: 200px;
+}
+.Vh2 {
+  color: #333;
+  font-size: 21px;
+}
