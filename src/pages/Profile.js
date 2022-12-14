@@ -14,6 +14,7 @@ function ProfileInfo() {
     const [value1, setValue1] = useState(0);
     const [value2, setValue2] = useState(0);
     const [value3, setValue3] = useState(0);
+
     const loggedUser = useContext(userContext);
     
     return (
@@ -39,20 +40,20 @@ function ProfileInfo() {
                 <div className="vote-wrap2">
                     <div className="vote">
                         <p className="vote-num">{loggedUser.res}</p>
-                        <button className="vote-icon" onClick={() => setValue1(value1 + 1)}><FontAwesomeIcon icon={faHeart} /></button>
-
+                        <button className="vote-icon" onClick={() => setValue1(value1 + 1)}><FontAwesomeIcon color="red" className="icon1" icon={faHeart} /></button>
+                        {value1}
                         <h3 className="Vh3">RESPONSIVE</h3>
                     </div>
                     <div className="vote">
                         <p className="vote-num">{loggedUser.pro}</p>
                         <button className="vote-icon" onClick={() => setValue2(value2 + 1)}><FontAwesomeIcon icon={faHeart} /></button>
-
+                        {value2}
                         <h3 className="Vh3">PROPERTY VIEWED IN PERSON</h3>
                     </div>
                     <div className="vote">
                         <p className="vote-num">{loggedUser.acc}</p>
                         <button className="vote-icon" onClick={() => setValue3(value3 + 1)}><FontAwesomeIcon icon={faHeart} /></button>
-
+                        {value3}
                         <h3 className="Vh3">ACCURATE DESCRIPTION</h3>
                     </div>
                 </div>
